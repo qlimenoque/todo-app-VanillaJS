@@ -23,6 +23,7 @@ body {
 .todo-app-header {
     height: 10%;
     text-align: center;
+    margin: auto;
 }
 
 
@@ -53,9 +54,11 @@ body {
 }
 
 .todo-app-checkAll {
+    display: block;
+    float: left;
+    margin: 3px;
     font-size: 24px;
     transition: 0.1s;
-    padding: 18px;
     border-right: 1px gray solid;
     border-image:
             linear-gradient(
@@ -65,10 +68,18 @@ body {
             ) 1 100%;
 }
 
+.todo-app-checkAll:hover {
+    color: #62d165;
+}
+
 .todo-app-body {
     height: 80%;
-    margin: 0;
     padding: 0;
+}
+
+#todo-app-list {
+    padding: 0;
+    margin-top: 40px;
 }
 
 .todo-app-item {
@@ -196,11 +207,13 @@ input[type=checkbox] {
     overflow:hidden;
     width:15px;
     height:15px;
+    transition: 0.1s;
 }
 
 input[type=checkbox]:checked {
-    background-color: #ed963d;
-    border: 1px solid #ebed8e
+    background-color: #edc2a5;
+    border: 1px solid #ebed8e;
+    transition: 0.1s;
 }
 
 input[type=checkbox]:hover {
