@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
+
+* {
+    font-family: 'Crimson Pro', serif;
+}
 body {
     background:
             radial-gradient(#dcdcdc 3px, transparent 4px),
@@ -26,6 +31,12 @@ body {
     margin: auto;
 }
 
+.todo-app-header h1 {
+    color: #edc2a5;
+    border-bottom: 1px coral solid;
+    width: 50%;
+    margin: 30px auto;
+}
 
 .todo-app-input input[type="checkbox"] {
     margin: 8px;
@@ -47,10 +58,10 @@ body {
 }
 
 .todo-app-header input {
-    margin: 10px 20px;
+    margin: 20px;
     padding: 12px;
     width: 330px;
-    border: 0;
+    border: 1px #e5e5e5 dotted;
 }
 
 .todo-app-checkAll {
@@ -129,12 +140,6 @@ body {
     margin: 10px auto;
 }
 
-.todo-app-filters button {
-    padding: 4px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
 .todo-app-remove {
     color: orange;
     order: 3;
@@ -159,18 +164,17 @@ body {
 
 .button {
     margin: 30px auto;
-    padding: 0;
-
+    padding: 12px;
     overflow: hidden;
-
     border-width: 0;
     outline: none;
+    font-weight: 900;
     border-radius: 6px;
     box-shadow: 0 1px 4px;
     background-color: #ed9f5e;
     color: #ecf0f1;
-
     transition: background-color .3s;
+    cursor: pointer;
 }
 
 .button:hover, .button:focus {
@@ -179,15 +183,11 @@ body {
 
 .button:before {
     content: "";
-
     display: block;
     width: 0;
     padding-top: 0;
-
     border-radius: 100%;
-
     background-color: rgba(236, 240, 241, .3);
-
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
