@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.todo-app {
+    margin-top: 100px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.todo-app-header {
+    height: 10%;
+    text-align: center;
+}
+
+
+.todo-app-input input[type="checkbox"] {
+    margin: 8px;
+    width: 16px;
+}
+
+.todo-app-header span {
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.1s;
+    padding: 18px;
+    border-right: 1px gray solid;
+    border-image:
+            linear-gradient(
+                    to bottom,
+                    rgba(237, 159, 94, 0.93),
+                    rgb(255, 227, 176)
+            ) 1 100%;
+}
+
+.todo-app-header input {
+    margin: 10px 20px;
+    padding: 12px;
+    width: 330px;
+    border: 0;
+}
+
+.todo-app-checkAll {
+    font-size: 24px;
+    transition: 0.1s;
+    padding: 18px;
+    border-right: 1px gray solid;
+    border-image:
+            linear-gradient(
+                    to bottom,
+                    rgba(237, 159, 94, 0.93),
+                    rgb(255, 227, 176)
+            ) 1 100%;
+}
+
+.todo-app-body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-app-item {
+    display: flex;
+    list-style: none;
+    border-top: 1px coral solid;
+    margin: 4px;
+    padding: 10px;
+    vertical-align: middle;
+    height: 25px;
+    align-items: center;
+}
+
+
+.todo-app-checkbox {
+    display: flex;
+    flex: 0;
+    margin: 8px;
+    padding: 4px;
+}
+
+.todo-app-item-span {
+    margin: 12px;
+    flex: 2;
+}
+
+.todo-app-footer {
+    height: 10%;
+    text-align: center;
+}
+
+.todo-app-footer {
+    /*display: none;*/
+    height: 10%;
+    text-align: center;
+    border-top: 1px coral solid;
+}
+
+.todo-app-counter {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.todo-app-filters {
+    display: inline-block;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.todo-app-filters button {
+    padding: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.todo-app-remove {
+    color: orange;
+    order: 3;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    float: right;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todo-app-remove:hover {
+    transition: 0.2s;
+    color: red;
+}
+
+#counter {
+    color: indianred;
+    margin-right: 20px;
+}
+
+.button {
+    margin: 30px auto;
+    padding: 0;
+
+    overflow: hidden;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px;
+    background-color: #ed9f5e;
+    color: #ecf0f1;
+
+    transition: background-color .3s;
+}
+
+.button:hover, .button:focus {
+    background-color: #27ae60;
+}
+
+.button:before {
+    content: "";
+
+    display: block;
+    width: 0;
+    padding-top: 0;
+
+    border-radius: 100%;
+
+    background-color: rgba(236, 240, 241, .3);
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+input[type=checkbox] {
+    padding-left:5px;
+    padding-right:5px;
+    -webkit-appearance:button;
+    border: double 2px #ed9f5e;
+    background-color: #ffeefd;
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+    width:15px;
+    height:15px;
+}
+
+input[type=checkbox]:checked {
+    background-color: #ed963d;
+    border: 1px solid #ebed8e
+}
+
+input[type=checkbox]:hover {
+    box-shadow: #ffe3b0 0 0 10;
+}

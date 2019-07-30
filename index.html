@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ToDo App</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="todo-app">
+	<div class="todo-app-header">
+		<h1>ToDo</h1>
+		<span class="todo-app-checkAll">X</span>
+		<input id="inputText" type="text" placeholder="What needs to be done">
+	</div>
+	<div class="todo-app-body">
+		<ul id="todo-app-list">
+
+		</ul>
+	</div>
+	<div class="todo-app-footer">
+		<div class="todo-app-counter">
+			<span>All items: </span>
+			<span id="counter">0</span>
+			<div class="todo-app-filters">
+				<button id="filter-all" class="button">All</button>
+				<button id="filter-active" class="button">Active</button>
+				<button id="filter-completed" class="button">Completed</button>
+				<button id="clear-completed" class="button">Clear Completed</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="src/index.js"></script>
+</html>
