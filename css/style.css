@@ -32,7 +32,7 @@ body {
 }
 
 .todo-app-header h1 {
-    color: #edc2a5;
+    color: #edb88e;
     border-bottom: 1px coral solid;
     width: 50%;
     margin: 30px auto;
@@ -172,7 +172,7 @@ body {
     border-radius: 6px;
     box-shadow: 0 1px 4px;
     background-color: #ed9f5e;
-    color: #ecf0f1;
+    color: #fff;
     transition: background-color .3s;
     cursor: pointer;
 }
