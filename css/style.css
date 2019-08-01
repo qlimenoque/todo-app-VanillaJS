@@ -112,30 +112,23 @@ body {
     padding: 4px;
 }
 
-.todo-app-item-span {
-    margin: 12px;
-    flex: 2;
-}
-
 .todo-app-footer {
+    display: flex;
     height: 10%;
-    text-align: center;
-}
-
-.todo-app-footer {
-    /*display: none;*/
-    height: 10%;
-    text-align: center;
     border-top: 1px coral solid;
 }
 
 .todo-app-counter {
-    display: inline-block;
-    margin-right: 20px;
+    flex: 1;
+    margin: auto 8px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .todo-app-filters {
-    display: inline-block;
+    display: flex;
+    flex: 4;
     padding: 0;
     margin: 10px auto;
 }
@@ -159,11 +152,11 @@ body {
 
 #counter {
     color: indianred;
-    margin-right: 20px;
+    margin: auto;
 }
 
 .button {
-    margin: 30px auto;
+    margin: 30px 4px;
     padding: 12px;
     overflow: hidden;
     border-width: 0;
